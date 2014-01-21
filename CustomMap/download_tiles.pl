@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
 
+#use this script to download a few OpenStreetMap tiles for offline local maps
+#there are better ways to do this, this is just a quick script to get a few tiles for the demonstration purpose only
+
 use lib '/Library/Perl/5.16';
 use strict;
 use LWP::UserAgent;
@@ -15,6 +18,8 @@ mkdir("tiles");
 
 exit(0);
 
+#get_tiles(x_levels_array,y_levels_array,z_level)
+#download and save tiles at z_level spanning in the x_levels:y_levels area
 sub get_tiles() {
 	my $x_ref = shift @_;
 	my $y_ref = shift @_;

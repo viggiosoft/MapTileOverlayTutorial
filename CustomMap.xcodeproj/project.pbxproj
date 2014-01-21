@@ -53,6 +53,9 @@
 		642E9A6B188E6FB0004A9887 /* MapWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWindowController.h; sourceTree = "<group>"; };
 		642E9A6C188E6FB0004A9887 /* MapWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWindowController.m; sourceTree = "<group>"; };
 		642E9A6E188E70CA004A9887 /* MapWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapWindow.xib; sourceTree = "<group>"; };
+		642E9A72188E8A5E004A9887 /* download_tiles.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = download_tiles.pl; sourceTree = "<group>"; };
+		642E9A73188E8A5E004A9887 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		642E9A74188E8A5E004A9887 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		644D416B188BED5100773D3E /* CustomMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D416E188BED5100773D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		644D4170188BED5100773D3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,6 +177,9 @@
 		644D4174188BED5100773D3E /* CustomMap */ = {
 			isa = PBXGroup;
 			children = (
+				642E9A72188E8A5E004A9887 /* download_tiles.pl */,
+				642E9A73188E8A5E004A9887 /* LICENSE */,
+				642E9A74188E8A5E004A9887 /* README.md */,
 				64C20204188D30D600549F58 /* tiles */,
 				644D417D188BED5100773D3E /* AppDelegate.h */,
 				644D417E188BED5100773D3E /* AppDelegate.m */,
