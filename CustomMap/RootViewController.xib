@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="mapView" destination="ED6-ya-Chq" id="ILz-he-SLm"/>
+                <outlet property="overlaySelector" destination="aed-IK-ivG" id="s6u-PS-Dix"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-ya-Chq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="574"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TpJ-0r-7ew"/>
+                    </connections>
+                </mapView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyg-Bm-lX8">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="E0T-ke-tdt"/>
+                        <barButtonItem style="plain" id="Ysz-cV-KnD">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aed-IK-ivG">
+                                <rect key="frame" x="14" y="7" width="293" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Apple"/>
+                                    <segment title="OpenStreet"/>
+                                    <segment title="Google"/>
+                                    <segment title="Offline"/>
+                                </segments>
+                                <connections>
+                                    <action selector="overlaySelectorChanged:" destination="-1" eventType="valueChanged" id="X8o-3t-ELI"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9c1-Rm-1kg"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ED6-ya-Chq" secondAttribute="bottom" constant="-6" id="5d3-GZ-NFD"/>
+                <constraint firstItem="ED6-ya-Chq" firstAttribute="top" secondItem="1" secondAttribute="top" id="Emn-uM-dbf"/>
+                <constraint firstAttribute="trailing" secondItem="ED6-ya-Chq" secondAttribute="trailing" id="H8L-ye-rz6"/>
+                <constraint firstItem="ED6-ya-Chq" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="K9A-Gf-u2i"/>
+                <constraint firstAttribute="bottom" secondItem="Pyg-Bm-lX8" secondAttribute="bottom" id="O46-I2-rnj"/>
+                <constraint firstAttribute="trailing" secondItem="Pyg-Bm-lX8" secondAttribute="trailing" id="hnr-MT-DkL"/>
+                <constraint firstItem="Pyg-Bm-lX8" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="nhH-ki-Vwh"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

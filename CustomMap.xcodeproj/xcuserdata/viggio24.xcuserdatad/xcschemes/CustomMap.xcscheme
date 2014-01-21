@@ -38,6 +38,16 @@
                ReferencedContainer = "container:CustomMap.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "642E9A55188E6D61004A9887"
+               BuildableName = "CustomMapOSXTests.xctest"
+               BlueprintName = "CustomMapOSXTests"
+               ReferencedContainer = "container:CustomMap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

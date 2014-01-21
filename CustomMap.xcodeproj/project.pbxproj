@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642E9A39188E6D61004A9887 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642E9A38188E6D61004A9887 /* Cocoa.framework */; };
+		642E9A43188E6D61004A9887 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 642E9A41188E6D61004A9887 /* InfoPlist.strings */; };
+		642E9A45188E6D61004A9887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 642E9A44188E6D61004A9887 /* main.m */; };
+		642E9A49188E6D61004A9887 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 642E9A47188E6D61004A9887 /* Credits.rtf */; };
+		642E9A4C188E6D61004A9887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 642E9A4B188E6D61004A9887 /* AppDelegate.m */; };
+		642E9A4F188E6D61004A9887 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642E9A4D188E6D61004A9887 /* MainMenu.xib */; };
+		642E9A51188E6D61004A9887 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642E9A50188E6D61004A9887 /* Images.xcassets */; };
+		642E9A6A188E6DF9004A9887 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642E9A69188E6DF9004A9887 /* MapKit.framework */; };
+		642E9A6D188E6FB0004A9887 /* MapWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642E9A6C188E6FB0004A9887 /* MapWindowController.m */; };
+		642E9A6F188E70CA004A9887 /* MapWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642E9A6E188E70CA004A9887 /* MapWindow.xib */; };
+		642E9A70188E7518004A9887 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 64C20204188D30D600549F58 /* tiles */; };
+		642E9A71188E7537004A9887 /* GridTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D41A5188C3BD500773D3E /* GridTileOverlay.m */; };
 		644D416F188BED5100773D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D416E188BED5100773D3E /* Foundation.framework */; };
 		644D4171188BED5100773D3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4170188BED5100773D3E /* CoreGraphics.framework */; };
 		644D4173188BED5100773D3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4172188BED5100773D3E /* UIKit.framework */; };
@@ -14,24 +26,33 @@
 		644D417B188BED5100773D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D417A188BED5100773D3E /* main.m */; };
 		644D417F188BED5100773D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D417E188BED5100773D3E /* AppDelegate.m */; };
 		644D4181188BED5100773D3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644D4180188BED5100773D3E /* Images.xcassets */; };
-		644D4188188BED5100773D3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4187188BED5100773D3E /* XCTest.framework */; };
-		644D4189188BED5100773D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D416E188BED5100773D3E /* Foundation.framework */; };
-		644D418A188BED5100773D3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D4172188BED5100773D3E /* UIKit.framework */; };
-		644D4192188BED5100773D3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 644D4190188BED5100773D3E /* InfoPlist.strings */; };
-		644D4194188BED5100773D3E /* CustomMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D4193188BED5100773D3E /* CustomMapTests.m */; };
+		644D41A0188C346000773D3E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D419E188C346000773D3E /* RootViewController.m */; };
+		644D41A1188C346000773D3E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 644D419F188C346000773D3E /* RootViewController.xib */; };
+		644D41A3188C355E00773D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D41A2188C355E00773D3E /* MapKit.framework */; };
+		644D41A6188C3BD500773D3E /* GridTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D41A5188C3BD500773D3E /* GridTileOverlay.m */; };
+		644D41A9188C3DB400773D3E /* GridTileOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */; };
+		64C20205188D30D600549F58 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 64C20204188D30D600549F58 /* tiles */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		644D418B188BED5100773D3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 644D4163188BED5100773D3E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 644D416A188BED5100773D3E;
-			remoteInfo = CustomMap;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		642E9A37188E6D61004A9887 /* CustomMapOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMapOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		642E9A38188E6D61004A9887 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		642E9A3B188E6D61004A9887 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		642E9A3C188E6D61004A9887 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		642E9A3D188E6D61004A9887 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		642E9A40188E6D61004A9887 /* CustomMapOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomMapOSX-Info.plist"; sourceTree = "<group>"; };
+		642E9A42188E6D61004A9887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		642E9A44188E6D61004A9887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		642E9A46188E6D61004A9887 /* CustomMapOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomMapOSX-Prefix.pch"; sourceTree = "<group>"; };
+		642E9A48188E6D61004A9887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		642E9A4A188E6D61004A9887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		642E9A4B188E6D61004A9887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		642E9A4E188E6D61004A9887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		642E9A50188E6D61004A9887 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		642E9A69188E6DF9004A9887 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		642E9A6B188E6FB0004A9887 /* MapWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWindowController.h; sourceTree = "<group>"; };
+		642E9A6C188E6FB0004A9887 /* MapWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWindowController.m; sourceTree = "<group>"; };
+		642E9A6E188E70CA004A9887 /* MapWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapWindow.xib; sourceTree = "<group>"; };
 		644D416B188BED5100773D3E /* CustomMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D416E188BED5100773D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		644D4170188BED5100773D3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,42 +64,84 @@
 		644D417D188BED5100773D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		644D417E188BED5100773D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		644D4180188BED5100773D3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		644D4186188BED5100773D3E /* CustomMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		644D4187188BED5100773D3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		644D418F188BED5100773D3E /* CustomMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomMapTests-Info.plist"; sourceTree = "<group>"; };
-		644D4191188BED5100773D3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		644D4193188BED5100773D3E /* CustomMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMapTests.m; sourceTree = "<group>"; };
+		644D419D188C346000773D3E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		644D419E188C346000773D3E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		644D419F188C346000773D3E /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		644D41A2188C355E00773D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		644D41A4188C3BD500773D3E /* GridTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTileOverlay.h; sourceTree = "<group>"; };
+		644D41A5188C3BD500773D3E /* GridTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTileOverlay.m; sourceTree = "<group>"; };
+		644D41A7188C3DB400773D3E /* GridTileOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTileOverlayRenderer.h; sourceTree = "<group>"; };
+		644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTileOverlayRenderer.m; sourceTree = "<group>"; };
+		64C20204188D30D600549F58 /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		642E9A34188E6D61004A9887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642E9A6A188E6DF9004A9887 /* MapKit.framework in Frameworks */,
+				642E9A39188E6D61004A9887 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		644D4168188BED5100773D3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				644D4171188BED5100773D3E /* CoreGraphics.framework in Frameworks */,
 				644D4173188BED5100773D3E /* UIKit.framework in Frameworks */,
+				644D41A3188C355E00773D3E /* MapKit.framework in Frameworks */,
 				644D416F188BED5100773D3E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		644D4183188BED5100773D3E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				644D4188188BED5100773D3E /* XCTest.framework in Frameworks */,
-				644D418A188BED5100773D3E /* UIKit.framework in Frameworks */,
-				644D4189188BED5100773D3E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642E9A3A188E6D61004A9887 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642E9A3B188E6D61004A9887 /* AppKit.framework */,
+				642E9A3C188E6D61004A9887 /* CoreData.framework */,
+				642E9A3D188E6D61004A9887 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		642E9A3E188E6D61004A9887 /* CustomMapOSX */ = {
+			isa = PBXGroup;
+			children = (
+				642E9A4A188E6D61004A9887 /* AppDelegate.h */,
+				642E9A4B188E6D61004A9887 /* AppDelegate.m */,
+				642E9A4D188E6D61004A9887 /* MainMenu.xib */,
+				642E9A50188E6D61004A9887 /* Images.xcassets */,
+				642E9A3F188E6D61004A9887 /* Supporting Files */,
+				642E9A6B188E6FB0004A9887 /* MapWindowController.h */,
+				642E9A6C188E6FB0004A9887 /* MapWindowController.m */,
+				642E9A6E188E70CA004A9887 /* MapWindow.xib */,
+			);
+			path = CustomMapOSX;
+			sourceTree = "<group>";
+		};
+		642E9A3F188E6D61004A9887 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				642E9A40188E6D61004A9887 /* CustomMapOSX-Info.plist */,
+				642E9A41188E6D61004A9887 /* InfoPlist.strings */,
+				642E9A44188E6D61004A9887 /* main.m */,
+				642E9A46188E6D61004A9887 /* CustomMapOSX-Prefix.pch */,
+				642E9A47188E6D61004A9887 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		644D4162188BED5100773D3E = {
 			isa = PBXGroup;
 			children = (
 				644D4174188BED5100773D3E /* CustomMap */,
-				644D418D188BED5100773D3E /* CustomMapTests */,
+				642E9A3E188E6D61004A9887 /* CustomMapOSX */,
 				644D416D188BED5100773D3E /* Frameworks */,
 				644D416C188BED5100773D3E /* Products */,
 			);
@@ -88,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				644D416B188BED5100773D3E /* CustomMap.app */,
-				644D4186188BED5100773D3E /* CustomMapTests.xctest */,
+				642E9A37188E6D61004A9887 /* CustomMapOSX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,10 +159,14 @@
 		644D416D188BED5100773D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				642E9A69188E6DF9004A9887 /* MapKit.framework */,
+				644D41A2188C355E00773D3E /* MapKit.framework */,
 				644D416E188BED5100773D3E /* Foundation.framework */,
 				644D4170188BED5100773D3E /* CoreGraphics.framework */,
 				644D4172188BED5100773D3E /* UIKit.framework */,
 				644D4187188BED5100773D3E /* XCTest.framework */,
+				642E9A38188E6D61004A9887 /* Cocoa.framework */,
+				642E9A3A188E6D61004A9887 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +174,18 @@
 		644D4174188BED5100773D3E /* CustomMap */ = {
 			isa = PBXGroup;
 			children = (
+				64C20204188D30D600549F58 /* tiles */,
 				644D417D188BED5100773D3E /* AppDelegate.h */,
 				644D417E188BED5100773D3E /* AppDelegate.m */,
 				644D4180188BED5100773D3E /* Images.xcassets */,
 				644D4175188BED5100773D3E /* Supporting Files */,
+				644D419D188C346000773D3E /* RootViewController.h */,
+				644D419E188C346000773D3E /* RootViewController.m */,
+				644D41A4188C3BD500773D3E /* GridTileOverlay.h */,
+				644D41A5188C3BD500773D3E /* GridTileOverlay.m */,
+				644D41A7188C3DB400773D3E /* GridTileOverlayRenderer.h */,
+				644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */,
+				644D419F188C346000773D3E /* RootViewController.xib */,
 			);
 			path = CustomMap;
 			sourceTree = "<group>";
@@ -126,27 +201,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		644D418D188BED5100773D3E /* CustomMapTests */ = {
-			isa = PBXGroup;
-			children = (
-				644D4193188BED5100773D3E /* CustomMapTests.m */,
-				644D418E188BED5100773D3E /* Supporting Files */,
-			);
-			path = CustomMapTests;
-			sourceTree = "<group>";
-		};
-		644D418E188BED5100773D3E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				644D418F188BED5100773D3E /* CustomMapTests-Info.plist */,
-				644D4190188BED5100773D3E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		642E9A36188E6D61004A9887 /* CustomMapOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642E9A63188E6D61004A9887 /* Build configuration list for PBXNativeTarget "CustomMapOSX" */;
+			buildPhases = (
+				642E9A33188E6D61004A9887 /* Sources */,
+				642E9A34188E6D61004A9887 /* Frameworks */,
+				642E9A35188E6D61004A9887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomMapOSX;
+			productName = CustomMapOSX;
+			productReference = 642E9A37188E6D61004A9887 /* CustomMapOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
 		644D416A188BED5100773D3E /* CustomMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 644D4197188BED5100773D3E /* Build configuration list for PBXNativeTarget "CustomMap" */;
@@ -164,24 +238,6 @@
 			productReference = 644D416B188BED5100773D3E /* CustomMap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		644D4185188BED5100773D3E /* CustomMapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 644D419A188BED5100773D3E /* Build configuration list for PBXNativeTarget "CustomMapTests" */;
-			buildPhases = (
-				644D4182188BED5100773D3E /* Sources */,
-				644D4183188BED5100773D3E /* Frameworks */,
-				644D4184188BED5100773D3E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				644D418C188BED5100773D3E /* PBXTargetDependency */,
-			);
-			name = CustomMapTests;
-			productName = CustomMapTests;
-			productReference = 644D4186188BED5100773D3E /* CustomMapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,8 +247,20 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = viggiosoft;
 				TargetAttributes = {
-					644D4185188BED5100773D3E = {
-						TestTargetID = 644D416A188BED5100773D3E;
+					642E9A36188E6D61004A9887 = {
+						DevelopmentTeam = 43P558Z35J;
+						SystemCapabilities = {
+							com.apple.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+					644D416A188BED5100773D3E = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -202,6 +270,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 644D4162188BED5100773D3E;
 			productRefGroup = 644D416C188BED5100773D3E /* Products */;
@@ -209,60 +278,89 @@
 			projectRoot = "";
 			targets = (
 				644D416A188BED5100773D3E /* CustomMap */,
-				644D4185188BED5100773D3E /* CustomMapTests */,
+				642E9A36188E6D61004A9887 /* CustomMapOSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		642E9A35188E6D61004A9887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642E9A70188E7518004A9887 /* tiles in Resources */,
+				642E9A43188E6D61004A9887 /* InfoPlist.strings in Resources */,
+				642E9A6F188E70CA004A9887 /* MapWindow.xib in Resources */,
+				642E9A51188E6D61004A9887 /* Images.xcassets in Resources */,
+				642E9A49188E6D61004A9887 /* Credits.rtf in Resources */,
+				642E9A4F188E6D61004A9887 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		644D4169188BED5100773D3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				644D4179188BED5100773D3E /* InfoPlist.strings in Resources */,
 				644D4181188BED5100773D3E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		644D4184188BED5100773D3E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				644D4192188BED5100773D3E /* InfoPlist.strings in Resources */,
+				64C20205188D30D600549F58 /* tiles in Resources */,
+				644D41A1188C346000773D3E /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		642E9A33188E6D61004A9887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642E9A4C188E6D61004A9887 /* AppDelegate.m in Sources */,
+				642E9A45188E6D61004A9887 /* main.m in Sources */,
+				642E9A71188E7537004A9887 /* GridTileOverlay.m in Sources */,
+				642E9A6D188E6FB0004A9887 /* MapWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		644D4167188BED5100773D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				644D417F188BED5100773D3E /* AppDelegate.m in Sources */,
 				644D417B188BED5100773D3E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		644D4182188BED5100773D3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				644D4194188BED5100773D3E /* CustomMapTests.m in Sources */,
+				644D41A9188C3DB400773D3E /* GridTileOverlayRenderer.m in Sources */,
+				644D41A6188C3BD500773D3E /* GridTileOverlay.m in Sources */,
+				644D41A0188C346000773D3E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		644D418C188BED5100773D3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 644D416A188BED5100773D3E /* CustomMap */;
-			targetProxy = 644D418B188BED5100773D3E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		642E9A41188E6D61004A9887 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642E9A42188E6D61004A9887 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		642E9A47188E6D61004A9887 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642E9A48188E6D61004A9887 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		642E9A4D188E6D61004A9887 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642E9A4E188E6D61004A9887 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		644D4177188BED5100773D3E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -271,17 +369,60 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		644D4190188BED5100773D3E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				644D4191188BED5100773D3E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		642E9A64188E6D61004A9887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomMapOSX/CustomMapOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CustomMapOSX/CustomMapOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		642E9A65188E6D61004A9887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomMapOSX/CustomMapOSX-Prefix.pch";
+				INFOPLIST_FILE = "CustomMapOSX/CustomMapOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		644D4195188BED5100773D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,51 +521,17 @@
 			};
 			name = Release;
 		};
-		644D419B188BED5100773D3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomMap.app/CustomMap";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CustomMap/CustomMap-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CustomMapTests/CustomMapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		644D419C188BED5100773D3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomMap.app/CustomMap";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CustomMap/CustomMap-Prefix.pch";
-				INFOPLIST_FILE = "CustomMapTests/CustomMapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		642E9A63188E6D61004A9887 /* Build configuration list for PBXNativeTarget "CustomMapOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642E9A64188E6D61004A9887 /* Debug */,
+				642E9A65188E6D61004A9887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		644D4166188BED5100773D3E /* Build configuration list for PBXProject "CustomMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -441,14 +548,7 @@
 				644D4199188BED5100773D3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		644D419A188BED5100773D3E /* Build configuration list for PBXNativeTarget "CustomMapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				644D419B188BED5100773D3E /* Debug */,
-				644D419C188BED5100773D3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

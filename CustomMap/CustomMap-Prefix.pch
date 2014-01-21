@@ -14,3 +14,13 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+// select if you don't want to use the custom overlay renderer for offline maps;
+// in the non-custom overlay render case (value set to 0) then you will use the
+// custom overlay subclass where the loadTileAtPath:result: is redefined to
+// provide an NSData containing the image to be rendered;
+// in the custom overlay render case (value set to 1) then the custom overlay class
+// loadTileAtPath:result: will be called with an empty (but non-nil) NSData
+// and the rendering will be done by the custom overlay renderer in the same exact way
+#define OFFLINE_USE_CUSTOM_OVERLAY_RENDERER 0
+

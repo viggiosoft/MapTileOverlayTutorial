@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="3338"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MapWindowController">
+            <connections>
+                <outlet property="mapView" destination="5MJ-dt-H8k" id="8gw-5C-BUl"/>
+                <outlet property="overlaySelector" destination="wgL-hS-nrZ" id="X9G-n8-ym3"/>
+                <outlet property="window" destination="hyg-A9-0pF" id="2BH-RM-LpW"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Custom Map Tile Overlay Demo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="hyg-A9-0pF">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="1pO-jg-vNc">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView translatesAutoresizingMaskIntoConstraints="NO" id="5MJ-dt-H8k">
+                        <rect key="frame" x="0.0" y="29" width="480" height="331"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="rU4-Mb-Ffl"/>
+                        </connections>
+                    </mapView>
+                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wgL-hS-nrZ">
+                        <rect key="frame" x="99" y="3" width="283" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <segmentedCell key="cell" alignment="left" style="rounded" trackingMode="selectOne" id="p7b-gZ-pGV">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="Apple"/>
+                                <segment label="OpenStreet" selected="YES" tag="1"/>
+                                <segment label="Google"/>
+                                <segment label="Offline"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="overlaySelectorChanged:" target="-2" id="bF9-5x-xZ1"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5MJ-dt-H8k" secondAttribute="bottom" constant="29" id="1No-r5-dwE"/>
+                    <constraint firstItem="5MJ-dt-H8k" firstAttribute="top" secondItem="1pO-jg-vNc" secondAttribute="top" id="SCn-Hi-9Wb"/>
+                    <constraint firstItem="5MJ-dt-H8k" firstAttribute="leading" secondItem="1pO-jg-vNc" secondAttribute="leading" id="VKy-ms-XgY"/>
+                    <constraint firstAttribute="centerX" secondItem="wgL-hS-nrZ" secondAttribute="centerX" id="nyS-2C-K4W"/>
+                    <constraint firstAttribute="trailing" secondItem="5MJ-dt-H8k" secondAttribute="trailing" id="sby-Fd-Goe"/>
+                    <constraint firstAttribute="bottom" secondItem="wgL-hS-nrZ" secondAttribute="bottom" constant="5" id="v8T-AB-cjL"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="Gog-4L-V6S"/>
+            </connections>
+        </window>
+    </objects>
+</document>
