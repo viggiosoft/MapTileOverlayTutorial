@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "GridTileOverlay.h"
+#import "WatermarkTileOverlayRenderer.h"
 #if ( OFFLINE_USE_CUSTOM_OVERLAY_RENDERER == 1)
 #import "GridTileOverlayRenderer.h"
 #endif
@@ -121,7 +122,11 @@ typedef NS_ENUM(NSInteger, CustomMapTileOverlayType) {
             renderer = [[MKTileOverlayRenderer alloc] initWithTileOverlay:tileOverlay];
 #endif
         } else {
-            renderer = [[MKTileOverlayRenderer alloc] initWithTileOverlay:tileOverlay];
+            if(self.overlayType==CustomMapTileOverlayTypeGoogle) {
+                renderer = [[WatermarkTileOverlayRenderer alloc] initWithTileOverlay:tileOverlay];
+            } else {
+                renderer = [[MKTileOverlayRenderer alloc] initWithTileOverlay:tileOverlay];                
+            }
         }
 
         return renderer;

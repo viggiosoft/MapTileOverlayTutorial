@@ -31,6 +31,7 @@
 		644D41A3188C355E00773D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644D41A2188C355E00773D3E /* MapKit.framework */; };
 		644D41A6188C3BD500773D3E /* GridTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D41A5188C3BD500773D3E /* GridTileOverlay.m */; };
 		644D41A9188C3DB400773D3E /* GridTileOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */; };
+		647CC0E6188FFEF60068A22B /* WatermarkTileOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 647CC0E5188FFEF60068A22B /* WatermarkTileOverlayRenderer.m */; };
 		64C20205188D30D600549F58 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 64C20204188D30D600549F58 /* tiles */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		644D41A5188C3BD500773D3E /* GridTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTileOverlay.m; sourceTree = "<group>"; };
 		644D41A7188C3DB400773D3E /* GridTileOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTileOverlayRenderer.h; sourceTree = "<group>"; };
 		644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTileOverlayRenderer.m; sourceTree = "<group>"; };
+		647CC0E4188FFEF60068A22B /* WatermarkTileOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatermarkTileOverlayRenderer.h; sourceTree = "<group>"; };
+		647CC0E5188FFEF60068A22B /* WatermarkTileOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatermarkTileOverlayRenderer.m; sourceTree = "<group>"; };
 		64C20204188D30D600549F58 /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +194,8 @@
 				644D41A5188C3BD500773D3E /* GridTileOverlay.m */,
 				644D41A7188C3DB400773D3E /* GridTileOverlayRenderer.h */,
 				644D41A8188C3DB400773D3E /* GridTileOverlayRenderer.m */,
+				647CC0E4188FFEF60068A22B /* WatermarkTileOverlayRenderer.h */,
+				647CC0E5188FFEF60068A22B /* WatermarkTileOverlayRenderer.m */,
 				644D419F188C346000773D3E /* RootViewController.xib */,
 			);
 			path = CustomMap;
@@ -332,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647CC0E6188FFEF60068A22B /* WatermarkTileOverlayRenderer.m in Sources */,
 				644D417F188BED5100773D3E /* AppDelegate.m in Sources */,
 				644D417B188BED5100773D3E /* main.m in Sources */,
 				644D41A9188C3DB400773D3E /* GridTileOverlayRenderer.m in Sources */,
@@ -537,6 +543,7 @@
 				642E9A65188E6D61004A9887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		644D4166188BED5100773D3E /* Build configuration list for PBXProject "CustomMap" */ = {
 			isa = XCConfigurationList;
