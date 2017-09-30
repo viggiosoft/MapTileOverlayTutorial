@@ -91,9 +91,9 @@ typedef NS_ENUM(NSInteger, CustomMapTileOverlayType) {
         // use online overlay
         NSString *urlTemplate = nil;
         if(self.overlayType==CustomMapTileOverlayTypeOpenStreet) {
-            urlTemplate = @"http://c.tile.openstreetmap.org/{z}/{x}/{y}.png";
+            urlTemplate = @"https://c.tile.openstreetmap.org/{z}/{x}/{y}.png";
         } else {
-            urlTemplate = @"http://mt0.google.com/vt/x={x}&y={y}&z={z}";
+            urlTemplate = @"https://mt0.google.com/vt/x={x}&y={y}&z={z}";
         }
         self.tileOverlay = [[MKTileOverlay alloc] initWithURLTemplate:urlTemplate];
         self.tileOverlay.canReplaceMapContent=YES;
